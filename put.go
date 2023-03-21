@@ -17,7 +17,7 @@ type PutData struct {
 	Body          string
 }
 
-func Put(data PostData) ([]byte, int, error) {
+func Put(data PutData) ([]byte, int, error) {
 	client := &http.Client{}
 	req, err := http.NewRequest("PUT", data.Url, strings.NewReader(data.Body))
 	if err != nil {
