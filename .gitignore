@@ -26,3 +26,4 @@ go.work
 __debug_bin
 
 docs/
+/.idea/aws.xml
